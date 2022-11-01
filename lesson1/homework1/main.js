@@ -54,7 +54,8 @@ console.log(typeof a, typeof b, typeof c);
 
 let firstName2 = prompt('name?');
 let middleName2 = prompt('middle name?');
-let age2 = prompt('age?');
+let age2 = +prompt('age?');
+console.log(firstName2, middleName2, age2);
 let person2 = firstName2 + ' ' + middleName2 + ' ' + age2;
 console.log(person2);
 person2 = `${firstName2} ${middleName2} ${age2}`;
