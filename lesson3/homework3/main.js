@@ -112,8 +112,6 @@ if (num1 > num2) {
 //         за допомоги  оператора || буде присвоювати змінній х значення "default"  якщо значення змінної х являється falsy (хибноподыбне, тобто кастується до false)
 
 let q = 0;
-if (q === 0 || q === false || q === undefined || q === null || q === '') {
-    q = 'default';
-}
+if (q === 0 || q === false || q === undefined || q === null || q === '') q = 'default';
 
 console.log(q)
