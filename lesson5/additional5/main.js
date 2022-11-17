@@ -120,3 +120,22 @@ let zero = (a, b) => {
 }
 
 console.log(arr3.sort(zero));
+
+// Рішення 2, без sort()---------------------------------------------------------------------------------
+
+let arr4 = [155, 0, 123, 44, 0, 7, 32, 544, 0, 555, 58, 0, 0, 0, 0, 69, 777, 12, 20];
+
+console.log(arr4);
+let zero2 = (arr) => {
+    for(let i = 0; i < arr.length - 1; i++) {
+        if(arr[i] === 0 && arr[i + 1] !== 0){
+            [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
+            i-=2;
+        }
+    }
+    return arr;
+}
+
+arr4 = zero2(arr4);
+
+console.log(arr4);
