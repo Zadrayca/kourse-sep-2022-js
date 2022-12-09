@@ -3,26 +3,26 @@
 
 const objExample = {
     id: 1,
-        name: 'Leanne Graham',
+    name: 'Leanne Graham',
     username: 'Bret',
     email: 'Sincere@april.biz',
     address: {
-    street: 'Kulas Light',
+        street: 'Kulas Light',
         suite: 'Apt. 556',
         city: 'Gwenborough',
         zipcode: '92998-3874',
         geo: {
-        lat: '-37.3159',
+            lat: '-37.3159',
             lng: '81.1496'
-    }
-},
+        }
+    },
     phone: '1-770-736-8031 x56442',
-        website: 'hildegard.org',
+    website: 'hildegard.org',
     company: {
-    name: 'Romaguera-Crona',
+        name: 'Romaguera-Crona',
         catchPhrase: 'Multi-layered client-server neural-net',
         bs: 'harness real-time e-markets'
-}
+    }
 }
 
 class Client {
@@ -60,9 +60,6 @@ let client = new Client(1, 'Leanne Graham', 'Bret', 'Sincere@april.biz', 'Kulas 
 console.log(client);
 
 
-
-
-
 // -  Створити функцію конструктор / клас  який описує об'єкт тегу
 // Поля :
 //     -назва тегу ()
@@ -85,16 +82,15 @@ console.log(client);
 // Приклад результуючого об'єкту
 const tagExample = {
     titleOfTag: 'area',
-        action: `Каждый элемент <area> определяет активные области изображения, которые являются ссылками...`,
+    action: `Каждый элемент <area> определяет активные области изображения, которые являются ссылками...`,
     attrs: [
-    {titleOfAttr: 'accesskey', actionOfAttr: 'Переход к области с помощью комбинации клавиш'},
-    {/*some props and values*/},
-    {/*...*/},
-    {/*...*/},
-]
+        {titleOfAttr: 'accesskey', actionOfAttr: 'Переход к области с помощью комбинации клавиш'},
+        {/*some props and values*/},
+        {/*...*/},
+        {/*...*/},
+    ]
 
 }
-
 
 class Teg {
     constructor(titleOfTag, action, titleOfAttr, actionOfAttr, title1fAttr, action1fAttr, title2fAttr, action2fAttr) {
