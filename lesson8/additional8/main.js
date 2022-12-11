@@ -15,7 +15,7 @@ getNameFunc = function () {
     }
     index++;
     if(index < lenClass){
-        return getNameFunc()
+        getNameFunc();
     }
 }
 
