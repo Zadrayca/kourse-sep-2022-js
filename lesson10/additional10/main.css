@@ -1,0 +1,117 @@
+.menu {
+    transition: 3s;
+    background: #14b3d7;
+    height: 90px;
+}
+.collapse {
+    height: 18px;
+    overflow: hidden;
+}
+
+.menuDiv {
+    height: 90px;
+}
+
+.body-comment {
+    transition: 1s;
+    height: 30px;
+}
+
+.hide-body {
+    height: 0;
+    overflow: hidden;
+}
+
+.hide-btn {
+    display: none;
+}
+
+#btnHide {
+    height: 21px;
+}
+
+.popup {
+    width: 150px;
+    height: 100px;
+    background: #14b3d7;
+    position: absolute;
+    top: -1000px;
+    left: 500px;
+    transition: 2s;
+    padding: 8px;
+    border: 3px solid #097ad7;
+    border-radius: 10px;
+}
+
+.show_popup2 {
+    position: fixed;
+    top: 250px;
+    left: 700px;
+    background: #bc73e7;
+}
+.show_popup3 {
+    position: fixed;
+    top: 400px;
+    left: 700px;
+    background: cornflowerblue;
+}
+
+.show_popup {
+    position: fixed;
+    top: 500px;
+    left: 500px;
+}
+
+.item {
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.user3 {
+    height: 195px;
+    width: 170px;
+    border: 2px solid black;
+}
+
+#userDiv {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.back{
+    position: fixed;
+    top: 400px;
+    left: 700px;
+}
+.next {
+    position: fixed;
+    top: 400px;
+    left: 750px;
+}
+
+.imageDiv {
+    position: fixed;
+    width: 300px;
+    height: 200px;
+    top: 50px;
+    left: 750px;
+}
+.imagee {
+    height: 100%;
+    width: auto;
+}
+.btnKar {
+    width: 30px;
+    height: 30px;
+}
+.karL {
+    position: fixed;
+    left: 700px;
+    top: 75px;
+}
+.karR {
+    position: fixed;
+    left: 1050px;
+    top: 75px;
+}
