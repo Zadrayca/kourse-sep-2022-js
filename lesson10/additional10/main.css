@@ -78,16 +78,9 @@
     flex-wrap: wrap;
 }
 
-
-.back{
-    position: fixed;
-    top: 400px;
-    left: 700px;
-}
-.next {
-    position: fixed;
-    top: 400px;
-    left: 750px;
+.btn {
+    width: 50px;
+    height: 30px;
 }
 
 .imageDiv {

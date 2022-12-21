@@ -241,11 +241,11 @@ chbox()
 //     лежащему с ним на одном уровне
 
 let next = document.createElement('button');
-next.classList.add('next', 'btn');
+next.classList.add('btn');
 next.innerText = 'next';
 
 let back = document.createElement('button');
-back.classList.add('back', 'btn');
+back.classList.add('btn');
 back.innerText = 'back';
 
 let bodyChild = document.body.children[0];
@@ -340,11 +340,11 @@ document.body.appendChild(document.createElement('hr'));                        
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 
 let next2 = document.createElement('button');
-next2.classList.add('next', 'btn');
+next2.classList.add('btn');
 next2.innerText = 'next2';
 
 let back2 = document.createElement('button');
-back2.classList.add('back', 'btn');
+back2.classList.add('btn');
 back2.innerText = 'back2';
 
 let bodyChild2 = document.body.children[0];
@@ -397,8 +397,6 @@ const step = function (back) {
 
     iter++;
     check = -1;
-
-    // return nextFunc2;
 }
 
 
