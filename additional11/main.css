@@ -1,0 +1,20 @@
+#father, #favorites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 7px;
+}
+
+#father button {
+    font-size: 18px;
+}
+
+.userDiv {
+    font-size: 18px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 2px;
+}
