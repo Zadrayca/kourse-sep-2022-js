@@ -16,7 +16,7 @@ const addGoods = document.forms.addGoods;
 const formBtn = document.getElementById('formBtn');
 
 function save(event) {
-    event.preventDefault()
+    event.preventDefault();
 
     let listOfGoods = JSON.parse(localStorage.getItem('listOfGoods')) || [];
 
@@ -48,14 +48,14 @@ function save(event) {
     );
 
     if (include) {
-        console.log('include')
+        console.log('include');
     } else {
         listOfGoods.push(newGoods);
     }
     localStorage.setItem('listOfGoods', JSON.stringify(listOfGoods));
 
 
-    // console.log(listOfGoods)
+    // console.log(listOfGoods);
 }
 
 formBtn.onclick = save;
