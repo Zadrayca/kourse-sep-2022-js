@@ -9,7 +9,7 @@
     font-size: 18px;
 }
 
-.userDiv {
+.userDiv, .itemDiv {
     font-size: 18px;
     width: 400px;
     display: flex;
@@ -17,4 +17,9 @@
     justify-content: space-between;
     border: 1px solid black;
     padding: 2px;
+}
+
+.itemDiv div {
+    display: flex;
+    align-items: center;
 }

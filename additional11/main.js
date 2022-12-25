@@ -31,7 +31,8 @@ fatherDiv.appendChild(favoriteA);
 
 users.forEach(user => {
     let userDiv = document.createElement('div');
-    // userDiv.innerText = JSON.stringify(user);
+    let itemDiv = document.createElement('div');
+    itemDiv.classList.add('itemDiv');
     userDiv.innerText = `name: ${user.name}, age: ${user.age}, status: ${user.status}`;
     let btn = document.createElement('button');
     btn.innerText = 'add to favorites';
@@ -40,7 +41,10 @@ users.forEach(user => {
 
         // favorites.includes(user) - не спрацьовує, тому довелося через find()
 
-        let include = favorites.find(item => item.name === user.name && item.age === user.age && item.status === user.status);
+        let include = favorites.find(item =>
+            item.name === user.name &&
+            item.age === user.age &&
+            item.status === user.status);
 
         if (include){
             console.log('include')
@@ -50,7 +54,7 @@ users.forEach(user => {
         localStorage.setItem('favorites', JSON.stringify(favorites));
     }
 
-    userDiv.appendChild(btn);
+    itemDiv.append(userDiv, btn);
 
-    fatherDiv.appendChild(userDiv);
+    fatherDiv.appendChild(itemDiv);
 })
