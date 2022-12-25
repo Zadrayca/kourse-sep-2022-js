@@ -1,0 +1,80 @@
+#father, #father2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    row-gap: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #fdf1dc;
+}
+
+#formDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    background-color: bisque;
+}
+
+#addGoods, #goodsListDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin: 10px;
+}
+
+.inDiv {
+    width: 620px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+    font-size: 17px;
+}
+
+.inDiv input {
+    width: 400px;
+    height: 20px;
+}
+
+#formBtn, #listBtn, #delAllBtn, #oneGoodsDelBtn {
+    font-size: 17px;
+    background-color: darksalmon;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 2px black;
+}
+
+#formBtn:hover, #listBtn:hover, #delAllBtn:hover, #oneGoodsDelBtn:hover {
+    background-color: #e5a48e;
+    transition: 0.7s;
+}
+
+#formBtn:active, #listBtn:active, #delAllBtn:active, #oneGoodsDelBtn:active {
+    background-color: #e3714a;
+    box-shadow: 0 0 2px 2px #cecece;
+}
+
+.goodsDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 3px solid black;
+    padding: 3px;
+    font-size: 17px;
+}
+
+.goodsDiv div {
+    padding: 2px;
+
+}
+
+.goodsTextDiv {
+    border: 3px solid black;
+    font-size: 20px;
+    background-color: #e5a48e;
+}
