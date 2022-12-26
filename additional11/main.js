@@ -1,4 +1,3 @@
-
 // є масив -
 let users = [
     {name: 'vasya', age: 31, status: false},
@@ -29,27 +28,40 @@ favoriteA.appendChild(favoriteBtn);
 
 fatherDiv.appendChild(favoriteA);
 
+let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+function checkFavorites(user) {
+
+    // favorites.includes(user) - не спрацьовує, тому довелося через find()
+
+    return favorites.find(item =>
+        item.name === user.name &&
+        item.age === user.age &&
+        item.status === user.status);
+}
+
 users.forEach(user => {
     let userDiv = document.createElement('div');
     let itemDiv = document.createElement('div');
     itemDiv.classList.add('itemDiv');
     userDiv.innerText = `name: ${user.name}, age: ${user.age}, status: ${user.status}`;
     let btn = document.createElement('button');
-    btn.innerText = 'add to favorites';
+
+    if (checkFavorites(user)) {
+        btn.innerText = 'added';
+        btn.style.backgroundColor = 'gray';
+    } else {
+        btn.innerText = 'add to favorites';
+    }
+
     btn.onclick = function () {
-        let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
-        // favorites.includes(user) - не спрацьовує, тому довелося через find()
-
-        let include = favorites.find(item =>
-            item.name === user.name &&
-            item.age === user.age &&
-            item.status === user.status);
-
-        if (include){
+        if (checkFavorites(user)) {
             console.log('include')
         } else {
             favorites.push(user);
+            btn.innerText = 'added';
+            btn.style.backgroundColor = 'gray';
         }
         localStorage.setItem('favorites', JSON.stringify(favorites));
     }
